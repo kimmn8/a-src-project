@@ -7,6 +7,7 @@ resp.encoding='euc-kr'
 html = resp.text
  
 bs = bs4.BeautifulSoup(html, 'html.parser')
-tags = bs.select('div.news_area h2 a') # Top ´º½º
+tags = bs.select('div.news_area h2 a')
 title = tags[0].getText()
 print(title)
+test
